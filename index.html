@@ -10,17 +10,17 @@
     
     <div class="container">
         <div class="button">
-            <button class="pomodoro">pomodoro</button>
-            <button class="short-break">short break</button>
-            <button class="long-break">long break</button>
+            <button class="pomodoro" id="pomodoro">pomodoro</button>
+            <button class="short-break" id="short">short break</button>
+            <button class="long-break" id="long">long break</button>
         </div>
 
         <div class="clock">
-            <h2>25:00</h2>
+            <h2 id="clock">25:00</h2>
         </div>
 
         <div class="option">
-            <button class="start">start</button>
+            <button class="start" id="start">start</button>
 
             <button class="restart">
                 <img src="../Image/restart.png">
@@ -32,9 +32,14 @@
         </div>
 
         <div class="audio">
-            <audio></audio>
+            <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            frameBorder="0" allowfullscreen=""
+            src="https://open.spotify.com/embed/track/0j94vdVS5r1b6FT2Yvz92C?utm_source=generator&theme=0&si=3e913f2a040e4305"
+            loading="lazy">
+            </iframe>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>

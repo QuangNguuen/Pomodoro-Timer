@@ -74,8 +74,8 @@ body {
     font-size: 25px;
     border: 1.5px solid white;
     border-radius: 18px;
-    color: white;
     font-weight: bold;
+    color: white;
 }
 
 .restart, .setting {

@@ -61,7 +61,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 }
 
 .start, .restart, .setting {

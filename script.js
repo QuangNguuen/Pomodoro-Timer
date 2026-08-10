@@ -6,7 +6,34 @@
     const short = document.getElementById('short');
     const long = document.getElementById('long');
 
+    //Color style when clicked//
+    const button = [pomodoro,short,long];
 
+    pomodoro.addEventListener('click', function() {
+        theme();
+    })
+
+    short.addEventListener('click', function() {
+        theme();
+    })
+
+    long.addEventListener('click', function() {
+        theme();
+    })
+
+    function theme(clicked) {
+        console.log('theme called', clicked);
+        for (let i = 0; i < button.length; i++) {
+            if (button[i] === clicked) {
+                button[i].style.color = 'black';
+                button[i].style.backgroundColor = 'white';
+            }
+            else {
+                button[i].style.color = 'white';
+                button[i].style.backgroundColor = 'transparent';
+            }
+        }
+    }
     //Start-Pause-Restart//
     const start = document.getElementById('start');
     const restart = document.getElementById('restart');
@@ -21,6 +48,7 @@
     let timeLeft = setTimes.pomodoro; //The standard time//
 
     //Format for the clock//
+    ////////////////////////
     function format() { //makes sure the format always work, no matter the time//
         const minute = Math.floor(timeLeft/60);
         const second = timeLeft%60;
@@ -50,6 +78,7 @@
 
 
     //Countdown//
+    /////////////
     let timerID;
     function countdown() {
         format();
